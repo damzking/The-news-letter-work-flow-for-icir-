@@ -14,8 +14,8 @@ Set `TTS_PROVIDER` to `kittenml` or `elevenlabs`. KittenML is the default for th
 ## Deploy on Streamlit Community Cloud
 
 1. Create an app from this repository and select `streamlit_app.py` as the entry point.
-2. Add `GOOGLE_API_KEY`, `KITTENML_API_KEY`, `KITTENML_VOICE_ID`, and `TTS_PROVIDER` in the app's Secrets settings. Add `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` only if using ElevenLabs.
-3. Restrict app visibility to the intended editors before sharing its URL.
+2. In Advanced settings, add `GOOGLE_API_KEY`, `KITTENML_API_KEY`, `KITTENML_VOICE_ID`, and `TTS_PROVIDER` in the app's Secrets field. Add `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` only if using ElevenLabs. `OPENAI_API_KEY` is optional and is used as a fallback for summarization.
+3. This repository is public, so Community Cloud makes the app public by default. Before sharing the URL, open the app's Sharing settings and select **Only specific people can view this app**. Community Cloud currently allows one private app per workspace.
 
 Do not put API keys in this repository, the README, or issue comments. Use the hosting provider's secret manager.
 
