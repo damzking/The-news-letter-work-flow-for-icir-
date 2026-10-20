@@ -1,0 +1,21 @@
+.env
+config/.env
+.streamlit/secrets.toml
+secrets.toml
+.venv/
+__pycache__/
+.pytest_cache/
+logs/
+
+# Local voice recordings, generated narration, and editorial state
+*.ogg
+*.wav
+*.mp3
+audio/samples/
+audio/generated/
+newsletter/stories.csv
+newsletter/stories.json
+newsletter/newsletter_review.csv
+newsletter/newsletter_approval.json
+newsletter/newsletter_script.txt
+newsletter/automation_state.json
