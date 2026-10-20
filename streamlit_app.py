@@ -209,8 +209,6 @@ with st.sidebar:
             st.error(f"Refresh failed: {exc}")
 
     st.caption("This pulls the latest ICIR feed and updates the review list.")
-    st.caption("Create a weekly Friday task in Windows Task Scheduler as described in PROJECT_STATUS.md. It uses only the approved story list and exact saved script for that Friday, and creates an MP3 without sending it.")
-
     st.markdown("---")
     st.caption(f"Stories file: {STORIES_PATH.name}")
 
